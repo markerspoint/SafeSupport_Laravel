@@ -29,7 +29,7 @@
                 </div>
 
                     <!-- Nav Links -->
-                <div class="hidden  md:flex gap-6 text-gray-700">
+                <div class="hidden md:flex gap-6 text-gray-700">
                     <a href="#" class="text-gray-700 font-semibold hover:text-safegreen transition-all duration-300">Home</a>
                     <a href="#" class="text-gray-700 font-semibold hover:text-safegreen transition-all duration-300">About</a>
                     <a href="#" class="text-gray-700 font-semibold hover:text-safegreen transition-all duration-300">Contact</a>                                                        
@@ -52,6 +52,31 @@
                     @endif
                 </div>
             </nav>
-        </header>        
+        </header> 
+        
+        
+            <section id="home" class="w-full h-dvh md:h-screen pt-3 flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-gray-300 text-center px-3">
+                <h1 class="font-light text-gray-700" style="font-size: clamp(2.75rem, 5vw, 3.75rem);">
+                Listen. Heal. Grow. <span class="font-semibold text-black"> Live.</span>
+                </h1>
+              
+
+                    <h1 class="mt-4 text-gray-500 sm:max-w-xs md:max-w-xl lg:max-w-xl" style="font-size: clamp(0.115rem, 5vw, 1rem)">
+                        Student, your feelings matter. Find the compassionate, professional counseling you need, made simple and always within reach.
+                    </h1>
+                
+                    <div class="mt-8">
+                        <a href="{{ route('register') }}"
+                        class="bg-safegreen text-white font-semibold px-6 py-3 rounded-xl hover:bg-white hover:text-safegreen border-2 border-safegreen transition-all">
+                            Get Started
+                        </a>
+                    </div>                
+                
+                    <div class="mt-12">
+                        <img src="/path-to-your-screenshot.png" alt="SafeSupport Preview" class="rounded-xl shadow-lg max-w-4xl w-full">
+                    </div>
+
+            </section>
+
     </body>
 </html>
