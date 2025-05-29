@@ -17,6 +17,17 @@ export default {
             colors: {
                 safegreen: '#0b6043', // ← your custom color
             },
+
+            // Add this block for fluid font sizes
+            fontSize: {
+                'fluid-xl': 'clamp(1.75rem, 5vw, 3.75rem)',
+                'fluid-lg': 'clamp(1.5rem, 4vw, 3rem)',
+                'fluid-md': 'clamp(1.25rem, 3vw, 2.5rem)',
+            },
+
+            screens: {
+                'navbreak': '920',
+            },
         },
     },
 
