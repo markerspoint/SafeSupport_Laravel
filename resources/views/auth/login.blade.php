@@ -43,8 +43,6 @@
             </div>
             
 
-
-
             {{-- <!-- Remember Me -->
             <div class="block mt-4 w-[20rem]">
                 <label for="remember_me" class="inline-flex items-center">
@@ -65,5 +63,22 @@
                     {{ __('Continue') }}
                 </x-primary-button>
         </form>
+
+        <div class="mt-1 text-center text-sm text-gray-600">
+            <p>
+                Don't have an account? 
+                <a href="{{ route('register') }}" class="text-safegreen hover:underline font-semibold">
+                    Sign up
+                </a>
+            </p>
+        </div>
+        
+        <div class="mb-2 text-center text-sm text-gray-600">
+            <p>or</p>
+        </div>
+
+        <div class="flex items-center justify-center gap-2 rounded-md border border-gray-400 w-[20rem] text-gray-600 text-center text-[1rem] p-[0.5rem] transition-all duration-200 hover:border-safegreen hover:ring-1 hover:ring-safegreen">
+            <span>Login with Google</span>
+        </div>                 
     </div>
 </x-guest-layout>

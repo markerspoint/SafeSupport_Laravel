@@ -14,7 +14,6 @@
         <!-- Thin style -->
         <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css">
 
-
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:100,200,300,400,500,600" rel="stylesheet" />
