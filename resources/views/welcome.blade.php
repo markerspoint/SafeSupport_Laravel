@@ -6,9 +6,18 @@
 
         <title>SafeSupport</title>
 
+        {{-- flat icon --}}
+        <!-- Solid style -->
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+        <!-- Regular style -->
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+        <!-- Thin style -->
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css">
+
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+        <link href="https://fonts.bunny.net/css?family=instrument-sans:100,200,300,400,500,600" rel="stylesheet" />
 
         <!-- Styles / Scripts -->
         @vite('resources/css/welcome.css')
@@ -102,7 +111,7 @@
         
         {{-- hero section --}}
             <section id="home" class="fade pt-[1rem] w-full h-[90vh] flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-gray-200 text-center px-3">
-                <h1 class="fade font-light text-gray-700" style="font-size: clamp(2.75rem, 5vw, 3.75rem);">
+                <h1 class="fade font-[300] text-gray-700" style="font-size: clamp(2.75rem, 5vw, 3.75rem);">
                 Listen. Heal. Grow. <span class="font-semibold text-black"> Live.</span>
                 </h1>
               
@@ -111,17 +120,20 @@
                         Student, your feelings matter. Find the compassionate, professional counseling you need, made simple and always within reach.
                     </h1>   
                 
-                    <div class="fade mt-8">
+                    <div class="fade mt-8 group">
                         <a href="{{ route('register') }}"
-                        class="bg-safegreen text-white font-semibold px-6 py-3 rounded-xl hover:bg-transparent hover:text-safegreen border-[1px] border-safegreen transition-all">
-                            Get Started
+                           class="inline-flex items-center gap-2 bg-safegreen text-white font-semibold px-6 py-2 rounded-xl border border-safegreen transition-all duration-300 group-hover:bg-transparent group-hover:text-safegreen">
+                            Book Now
+                            <i class="fi fi-rr-arrow-right mt-1 text-white group-hover:text-safegreen text-xl transition-transform duration-300 group-hover:translate-x-1"></i>
                         </a>
-                    </div>                
+                    </div>
+                    
+                                 
             </section>
 
             <!-- Cards Section (floating style) -->
             <div class="fade relative z-10">
-                <div class="container mx-auto -mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+                <div class="container mx-auto -mt-20 lg:max-w-[66rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
               
                 {{-- card 1 --}}
                 <div class="fade relative h-[350px] rounded-xl shadow-lg overflow-hidden group">
