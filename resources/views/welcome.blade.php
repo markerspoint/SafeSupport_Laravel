@@ -24,8 +24,7 @@
     </head>
 
     <body>
-        <header class="fade bg-gradient-to-b z-10 from-gray-50 to-gray-100 border-b border-gray-200">
-            {{-- alpineJS nav --}}
+        <header class="bg-gradient-to-b z-40 from-gray-50 to-gray-100 border-b border-gray-200">
             <nav x-data="{ open: false }" class="relative mx-4 md:mx-16 p-6 flex flex-wrap justify-between items-center">
 
                 <!-- Logo -->
@@ -79,7 +78,7 @@
                 x-show="open"
                 x-transition.opacity
                 @click="open = false"
-                class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" 
+                class="fixed inset-0 bg-black bg-opacity-50 z-[60] md:hidden" 
                 style="display: none;"
                 ></div>
 
@@ -92,7 +91,7 @@
                 x-transition:leave="transition ease-in-out duration-300 transform"
                 x-transition:leave-start="translate-x-0"
                 x-transition:leave-end="translate-x-full"
-                class="fixed top-0 right-0 h-full w-64 bg-gray-200 shadow-lg z-50 flex flex-col p-6 space-y-6 md:hidden"
+                class="fixed top-0 right-0 h-full w-64 bg-gray-200 shadow-lg z-[70] flex flex-col p-6 space-y-6 md:hidden"
                 style="display: none;"
                 >
                 <div class=" w-full border-b border-gray-300">
@@ -109,7 +108,7 @@
         
         
         {{-- hero section --}}
-            <section id="home" class="fade pt-[1rem] w-full h-[90vh] flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-gray-200 text-center px-3">
+            <section id="home" class="fade relative pt-[1rem] w-full h-[90vh] flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-gray-200 text-center px-3">
                 <h1 class="fade font-[300] text-gray-700" style="font-size: clamp(2.75rem, 5vw, 3.75rem);">
                 Listen. Heal. Grow. <span class="font-semibold text-black"> Live.</span>
                 </h1>
@@ -131,7 +130,7 @@
             </section>
 
             <!-- Cards Section (floating style) -->
-            <div class="fade relative z-10">
+            <div class="fade relative">
                 <div class="container mx-auto -mt-20 lg:max-w-[66rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
               
                 {{-- card 1 --}}
@@ -246,7 +245,7 @@
                 <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
                 
                   <!-- left: Mission & Vision Text -->
-                  <div>
+                  <div class="fade">
                     <h2 class="text-3xl font-bold mb-6 text-gray-600">About Us</h2>
               
                     <div class="mb-8">
@@ -265,19 +264,19 @@
                   </div>
               
                   <!-- right: image stack, flex center vertically -->
-                  <div class="relative w-full mx-auto lg:max-w-[40rem] flex items-center justify-center" style="min-height: 25rem;">
+                  <div class="fade relative w-full mx-auto lg:max-w-[40rem] flex items-center justify-center" style="min-height: 25rem;">
                     <!-- Bottom Left Image -->
-                    <img src="/images/counsel3.jpg" alt="Therapy Room"
+                    <img src="/images/counsel3.png" alt="Therapy Room"
                          class="absolute 
                                 top-[5rem] left-[2.5rem] 
                                 w-[16rem] h-[16rem] 
                                 sm:w-[12rem] sm:h-[12rem] sm:top-[3rem] sm:left-[1.5rem]
                                 md:w-[14rem] md:h-[14rem] md:top-[4rem] md:left-[2rem]
-                                object-cover rounded-xl shadow-xl z-10">
+                                object-cover rounded-xl shadow-2xl z-10">
               
                     <!-- Top Middle Image (raised above) -->
-                    <img src="/images/counsel2.jpg" alt="Support Group"
-                         class="absolute 
+                    <img src="/images/counsel2.png" alt="Support Group"
+                         class="absolute
                                 top-[2.5rem] left-[9rem] translate-y-1/2 
                                 w-[16rem] h-[16rem] 
                                 sm:w-[12rem] sm:h-[12rem] sm:left-[6rem] 
@@ -285,7 +284,7 @@
                                 object-cover rounded-xl shadow-2xl z-20">
               
                     <!-- Bottom Right Image -->
-                    <img src="/images/counsel1.jpg" alt="Counseling Session"
+                    <img src="/images/counsel1.png" alt="Counseling Session"
                          class="absolute 
                                 top-[5rem] left-[16rem] 
                                 w-[16rem] h-[15rem] 

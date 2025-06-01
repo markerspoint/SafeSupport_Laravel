@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        {{-- line icons --}}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body class="font-sans antialiased">
+    <div class="min-h-screen bg-gray-100 flex">
+        <!-- Sidebar -->
+        <x-sidebar />
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-        <script src="//unpkg.com/alpinejs" defer></script>
-
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <!-- Main Content Area -->
+        <div class="flex flex-col flex-1">
+            <!-- Navigation -->
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -33,10 +34,11 @@
                 </header>
             @endisset
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
+            <!-- Main -->
+            <main class="flex-1 p-6 bg-gray-50 overflow-y-auto">
+                @yield('content')
             </main>
         </div>
-    </body>
+    </div>
+</body>
 </html>
