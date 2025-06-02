@@ -58,7 +58,9 @@
                 <div class="hidden md:flex items-center gap-6">
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900">Dashboard</a>
+                            <a href="{{ url('/dashboard') }}" class="font-bold text-safegreen hover:text-safegreen/80 transition-colors duration-200">
+                                Dashboard
+                            </a>
                         @else
                             <a href="{{ route('login') }}" class="text-white bg-safegreen px-4 py-2 rounded-3xl transition hover:bg-transparent hover:text-safegreen hover:border-safegreen border border-transparent">
                                 Log in

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -14,6 +15,9 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="//unpkg.com/alpinejs" defer></script>
+
+    {{-- line icons --}}
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
 </head>
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100 flex">
@@ -36,7 +40,7 @@
 
             <!-- Main -->
             <main class="flex-1 p-6 bg-gray-50 overflow-y-auto">
-                @yield('content')
+               {{ $slot }}
             </main>
         </div>
     </div>
