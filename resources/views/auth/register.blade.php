@@ -8,7 +8,7 @@
         <div class="w-[20rem]">
             {{-- <x-input-label for="name" :value="__('Name')" /> --}}
             <x-text-input id="name" 
-            class="block mt-1 w-full" 
+            class="block mt-1 w-full bg-transparent" 
             type="text" name="name" 
             placeholder="Username"
             :value="old('name')" 
@@ -20,7 +20,7 @@
         <div class="mt-4 w-[20rem]">
             {{-- <x-input-label for="email" :value="__('Email')" /> --}}
             <x-text-input id="email" 
-            class="block mt-1 w-full" 
+            class="block mt-1 w-full bg-transparent" 
             type="email" 
             placeholder="Email"
             name="email" :value="old('email')" required autocomplete="username" />
@@ -31,7 +31,7 @@
         <div class="mt-4 w-[20rem]">
             {{-- <x-input-label for="password" :value="__('Password')" /> --}}
 
-            <x-text-input id="password" class="block mt-1 w-full"
+            <x-text-input id="password" class="block mt-1 w-full bg-transparent"
                             type="password"
                             name="password"
                             placeholder="Create password"
