@@ -26,7 +26,7 @@
             name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
-
+{{-- test --}}
         <!-- Password -->
         <div class="mt-4 w-[20rem]">
             {{-- <x-input-label for="password" :value="__('Password')" /> --}}
