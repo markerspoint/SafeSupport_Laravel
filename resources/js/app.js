@@ -6,6 +6,7 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
+// fade scroll effect
 document.addEventListener('DOMContentLoaded', () => {
     const faders = document.querySelectorAll('.fade');
 
