@@ -125,9 +125,7 @@
                             Book Now
                             <i class="fi fi-rr-arrow-right mt-1 text-white group-hover:text-safegreen text-xl transition-transform duration-300 group-hover:translate-x-1"></i>
                         </a>
-                    </div>
-                    
-                                 
+                    </div>                  
             </section>
 
             <!-- Cards Section (floating style) -->
@@ -267,7 +265,7 @@
                   <!-- right: image stack, flex center vertically -->
                   <div class="relative w-full mx-auto lg:max-w-[40rem] flex items-center justify-center" style="min-height: 25rem;">
                     <!-- Bottom Left Image -->
-                    <img src="/images/counsel3.jpg" alt="Therapy Room"
+                    <img src="/images/counsel2.png" alt="Therapy Room"
                          class="absolute 
                                 top-[5rem] left-[2.5rem] 
                                 w-[16rem] h-[16rem] 
@@ -276,7 +274,7 @@
                                 object-cover rounded-xl shadow-xl z-10">
               
                     <!-- Top Middle Image (raised above) -->
-                    <img src="/images/counsel2.jpg" alt="Support Group"
+                    <img src="/images/counsel3.png" alt="Support Group"
                          class="absolute 
                                 top-[2.5rem] left-[9rem] translate-y-1/2 
                                 w-[16rem] h-[16rem] 
@@ -285,7 +283,7 @@
                                 object-cover rounded-xl shadow-2xl z-20">
               
                     <!-- Bottom Right Image -->
-                    <img src="/images/counsel1.jpg" alt="Counseling Session"
+                    <img src="/images/counsel1.png  " alt="Counseling Session"
                          class="absolute 
                                 top-[5rem] left-[16rem] 
                                 w-[16rem] h-[15rem] 
@@ -294,6 +292,53 @@
                                 object-cover rounded-xl shadow-2xl z-30">
                   </div>
             </div>
+
+            <!-- Our Team -->
+            <div class="fade mx-auto mt-16 text-center">
+            <h2 class="text-2xl font-bold text-gray-600 mb-8">The Developers</h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 justify-items-center">
+                
+                <!-- Developer 1 -->
+                <div class="flex flex-col items-center">
+                <div class="w-[150px] h-[150px] mb-3">
+                    <img src="/images/ian.jpg" alt="Developer 1" class="w-full h-full object-cover rounded-full shadow-lg">
+                </div>
+                <p class="text-gray-800 font-semibold text-sm">Mark Ian Dela Cruz</p>
+                <p class="text-gray-500 text-xs">Developer / Programmer</p>
+                </div>
+
+                <!-- Developer 2 -->
+                <div class="flex flex-col items-center">
+                <div class="w-[150px] h-[150px] mb-3">
+                    <img src="/images/yvonne.jpg" alt="Developer 2" class="w-full h-full object-cover rounded-full shadow-lg">
+                </div>
+                <p class="text-gray-800 font-semibold text-sm">Yvonne Grace Ochida</p>
+                <p class="text-gray-500 text-xs">Analytical Writer</p>
+                </div>
+
+                <!-- Developer 3 -->
+                <div class="flex flex-col items-center">
+                <div class="w-[150px] h-[150px] mb-3">
+                    <img src="/images/cristine.jpeg" alt="Developer 3" class="w-full h-full object-cover rounded-full shadow-lg">
+                </div>
+                <p class="text-gray-800 font-semibold text-sm">Cristine Bilbar</p>
+                <p class="text-gray-500 text-xs">Quality and Assurance</p>
+                </div>
+
+                
+                <div class="flex flex-col items-center">
+                <div class="w-[150px] h-[150px] mb-3">
+                    <img src="/images/janpil.jpg" alt="Developer 4" class="w-full h-full object-cover rounded-full shadow-lg">
+                </div>
+                <p class="text-gray-800 font-semibold text-sm">Johnphil Arreco</p>
+                <p class="text-gray-500 text-xs">User Researcher</p>
+                </div>
+                
+
+            </div>
+            </div>
+
             </section>              
 
     </body>
