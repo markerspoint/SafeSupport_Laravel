@@ -21,7 +21,7 @@
                 >SafeSupport</p>
             <i 
             :class="open ? 'ml-[3rem]' : 'ml-0'"
-            class="lni lni-menu-cheesburger !text-[2rem]"></i>
+            class="ph ph-sidebar !text-[2rem]"></i>
         </button>
     </div>
 
