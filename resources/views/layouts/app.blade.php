@@ -5,11 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
-
-        {{-- line icons --}}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+        <title>{{ config('app.name', 'SafeSupport') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -26,10 +22,10 @@
     </head>
     <body class="font-sans antialiased">
         <div class="flex min-h-screen bg-gray-100">
-            <!-- Sidebar (Fixed Width) -->
+            <!-- Sidebar -->
             <x-sidebar />
 
-            <!-- Main content area (flex-grow) -->
+            <!-- Main content area-->
             <div class="flex-1 flex flex-col">
                 @include('layouts.navigation')
 
